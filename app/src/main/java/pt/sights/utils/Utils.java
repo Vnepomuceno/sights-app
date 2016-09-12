@@ -6,7 +6,10 @@ import android.util.DisplayMetrics;
 import pt.sights.R;
 
 /**
- * Created by valternepomuceno on 05/05/15.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	5th of May of 2015
  */
 public class Utils {
 

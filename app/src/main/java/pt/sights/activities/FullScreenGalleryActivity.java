@@ -13,6 +13,12 @@ import pt.sights.adapter.FullScreenImageAdapter;
 import pt.sights.data.DataManager;
 import pt.sights.utils.TouchImageView;
 
+/**
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	15th of March of 2015
+ */
 public class FullScreenGalleryActivity extends AppCompatActivity {
 
 	@Override

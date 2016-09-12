@@ -5,7 +5,10 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * Created by valternepomuceno on 24/01/15.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	24th of January of 2015
  */
 public class Format {
 

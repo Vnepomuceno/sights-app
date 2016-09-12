@@ -5,7 +5,10 @@ import pt.sights.data.Sight;
 import java.util.List;
 
 /**
- * Created by valternepomuceno on 22/11/2014.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	22th of November of 2014
  */
 public interface TourismResultsListener {
 

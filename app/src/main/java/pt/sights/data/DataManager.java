@@ -66,9 +66,11 @@ import static pt.sights.data.DataManager.LiquidEventType.GO_TO_GITHUB;
 import static pt.sights.data.DataManager.LiquidEventType.GO_TO_INSTAGRAM;
 import static pt.sights.data.DataManager.LiquidEventType.GO_TO_LINKEDIN;
 
-
 /**
- * Created by valternepomuceno on 02/12/2014.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	2nd of December of 2014
  */
 public class DataManager extends Application {
 

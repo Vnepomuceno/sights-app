@@ -24,7 +24,10 @@ import pt.sights.data.Sight;
 import pt.sights.listeners.TourismResultsListener;
 
 /**
- * Created by valternepomuceno on 28/11/2014.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	28th of November of 2014
  */
 public class TourismApiTask extends AsyncTask<String, Integer, List<Sight>> {
 

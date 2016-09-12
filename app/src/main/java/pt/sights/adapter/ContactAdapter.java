@@ -14,7 +14,10 @@ import pt.sights.R;
 import pt.sights.data.ContactItemData;
 
 /**
- * Created by valternepomuceno on 25/03/15.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	25th of March of 2015
  */
 public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHolder>
 	implements View.OnClickListener{

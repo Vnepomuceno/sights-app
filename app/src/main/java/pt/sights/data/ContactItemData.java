@@ -1,7 +1,10 @@
 package pt.sights.data;
 
 /**
- * Created by valternepomuceno on 25/03/15.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	25th of March of 2015
  */
 public class ContactItemData {
 

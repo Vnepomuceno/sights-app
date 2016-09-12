@@ -22,6 +22,12 @@ import pt.sights.R;
 import pt.sights.adapter.DrawerLayoutAdapter;
 import pt.sights.data.DataManager;
 
+/**
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	15th of November of 2014
+ */
 public class MainActivity extends AppCompatActivity {
 
 	private DataManager dataManager;

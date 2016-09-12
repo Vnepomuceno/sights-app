@@ -16,7 +16,10 @@ import pt.sights.R;
 import pt.sights.utils.TouchImageView;
 
 /**
- * Created by valternepomuceno on 24/08/15.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	24th of August of 2015
  */
 public class FullScreenImageAdapter extends PagerAdapter {
 

@@ -37,6 +37,12 @@ import pt.sights.data.DataManager;
 import static pt.sights.data.DataManager.LiquidActivityType.REGISTER;
 import static pt.sights.data.DataManager.LiquidEventType.ENTER;
 
+/**
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	15th of November of 2014
+ */
 public class RegisterActivity extends Activity implements LoaderCallbacks<Cursor> {
 
 	private UserRegisterTask mAuthTask = null;

@@ -23,6 +23,12 @@ import pt.sights.data.DataManager;
 import pt.sights.data.Sight;
 import pt.sights.listeners.MapsResultsListener;
 
+/**
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	27th of February of 2015
+ */
 public class CityMapActivity extends AppCompatActivity implements MapsResultsListener, LocationListener {
 
 	private GoogleMap mMap; // Might be null if Google Play services APK is not available.

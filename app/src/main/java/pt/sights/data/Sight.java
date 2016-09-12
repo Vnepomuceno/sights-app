@@ -14,6 +14,12 @@ import citysdk.tourism.client.poi.single.PointOfInterest;
 /**
  * Created by valternepomuceno on 03/12/2014.
  */
+/**
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	3rd of December of 2014
+ */
 public class Sight implements Comparable<Sight> {
 
 	private static int idCounter = 0;

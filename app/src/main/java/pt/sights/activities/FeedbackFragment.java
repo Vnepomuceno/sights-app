@@ -19,6 +19,12 @@ import pt.sights.data.DataManager;
 import static pt.sights.data.DataManager.LiquidActivityType.FEEDBACK;
 import static pt.sights.data.DataManager.LiquidEventType.ENTER;
 
+/**
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	10th of May of 2015
+ */
 public class FeedbackFragment extends Fragment {
 
 	private DataManager dataManager;

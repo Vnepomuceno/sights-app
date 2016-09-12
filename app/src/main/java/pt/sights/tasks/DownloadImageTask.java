@@ -11,7 +11,10 @@ import pt.sights.data.Sight;
 import pt.sights.listeners.UrlImageListener;
 
 /**
- * Created by valternepomuceno on 07/12/14.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	7th of December of 2014
  */
 public class DownloadImageTask extends AsyncTask<String, Integer, Bitmap[]> {
 

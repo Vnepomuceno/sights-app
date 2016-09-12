@@ -16,9 +16,11 @@ import pt.sights.data.DataManager;
 
 import java.util.List;
 
-
 /**
- * Created by valternepomuceno on 21/12/14.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	21th of December of 2014
  */
 public class SightCardAdapter extends RecyclerView.Adapter<SightCardAdapter.SightViewHolder>
 	implements View.OnClickListener {

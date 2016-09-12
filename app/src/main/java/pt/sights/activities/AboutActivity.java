@@ -24,6 +24,12 @@ import static pt.sights.data.DataManager.LiquidEventType.GO_TO_GITHUB;
 import static pt.sights.data.DataManager.LiquidEventType.GO_TO_INSTAGRAM;
 import static pt.sights.data.DataManager.LiquidEventType.GO_TO_LINKEDIN;
 
+/**
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	6th of May of 2015
+ */
 public class AboutActivity extends AppCompatActivity {
 
 	@Override

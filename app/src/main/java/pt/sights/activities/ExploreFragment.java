@@ -44,6 +44,12 @@ import static pt.sights.data.DataManager.LiquidActivityType.EXPLORE;
 import static pt.sights.data.DataManager.LiquidEventType.ENTER;
 import static pt.sights.data.DataManager.LiquidEventType.NO_INTERNET;
 
+/**
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	19th of April of 2015
+ */
 public class ExploreFragment extends Fragment implements TourismResultsListener,
 		UrlImageListener, StaticMapResultsListener {
 

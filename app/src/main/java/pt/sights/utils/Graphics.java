@@ -14,7 +14,10 @@ import android.renderscript.RenderScript;
 import android.renderscript.ScriptIntrinsicBlur;
 
 /**
- * Created by valternepomuceno on 17/12/14.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	17th of December of 2014
  */
 public class Graphics {
 

@@ -15,7 +15,10 @@ import pt.sights.activities.MainActivity;
 import pt.sights.data.DataManager;
 
 /**
- * Created by valternepomuceno on 20/02/15.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	20th of February of 2015
  */
 public class DrawerLayoutAdapter extends RecyclerView.Adapter<DrawerLayoutAdapter.ViewHolder> {
 

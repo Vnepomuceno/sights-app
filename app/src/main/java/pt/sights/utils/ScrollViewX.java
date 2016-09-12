@@ -5,7 +5,10 @@ import android.util.AttributeSet;
 import android.widget.ScrollView;
 
 /**
- * Created by valternepomuceno on 01/03/15.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	1st of March of 2015
  */
 public class ScrollViewX extends ScrollView {
 	private OnScrollViewListener mOnScrollViewListener;

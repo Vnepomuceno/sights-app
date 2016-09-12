@@ -8,6 +8,12 @@ import android.view.MenuItem;
 
 import pt.sights.R;
 
+/**
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	15th of November of 2014
+ */
 public class ThankYouActivity extends AppCompatActivity {
 
 	@Override

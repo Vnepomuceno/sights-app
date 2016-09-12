@@ -14,7 +14,10 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.io.InputStream;
 
 /**
- * Created by valternepomuceno on 29/11/2014.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	29th of November of 2014
  */
 public class GoogleStaticMapApiTask extends AsyncTask<String, Integer, Bitmap> {
 

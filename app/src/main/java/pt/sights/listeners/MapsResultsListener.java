@@ -4,7 +4,10 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 
 /**
- * Created by valternepomuceno on 29/11/2014.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	29th of November of 2014
  */
 public interface MapsResultsListener {
 

@@ -63,6 +63,12 @@ import static pt.sights.data.DataManager.LiquidEventType.FAVOURITE;
 import static pt.sights.data.DataManager.LiquidEventType.SHOW_LESS_DESCRIPTION;
 import static pt.sights.data.DataManager.LiquidEventType.SHOW_MORE_DESCRIPTION;
 
+/**
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	12th of January of 2015
+ */
 public class SightDetailActivity extends AppCompatActivity
 		implements UrlImageListener,StaticMapResultsListener, GoogleDistanceResultsListener {
 

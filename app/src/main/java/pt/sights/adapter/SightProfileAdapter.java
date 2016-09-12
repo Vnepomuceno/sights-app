@@ -18,7 +18,10 @@ import pt.sights.data.DataManager;
 import java.util.List;
 
 /**
- * Created by valternepomuceno on 06/06/15.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	6th of June of 2015
  */
 public class SightProfileAdapter extends RecyclerView.Adapter<SightProfileAdapter.SightViewHolder>
 	implements View.OnClickListener {

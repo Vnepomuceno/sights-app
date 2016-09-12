@@ -16,7 +16,10 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * Created by valternepomuceno on 18/03/15.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	18th of March of 2015
  */
 public class GoogleDistanceTask extends AsyncTask<String, Integer, String> {
 

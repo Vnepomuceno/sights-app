@@ -4,9 +4,11 @@ import android.graphics.Bitmap;
 
 import pt.sights.data.Sight;
 
-
 /**
- * Created by valternepomuceno on 03/12/2014.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	3rd of December of 2014
  */
 public interface UrlImageListener {
 

@@ -9,7 +9,10 @@ import android.view.ViewGroup;
 import pt.sights.R;
 
 /**
- * Created by valternepomuceno on 15/11/2014.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	15th of November of 2014
  */
 public class HistoryFragment extends Fragment {
 

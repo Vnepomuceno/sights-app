@@ -3,7 +3,10 @@ package pt.sights.data;
 import android.graphics.drawable.Drawable;
 
 /**
- * Created by poliveira on 24/10/2014.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	24th of October of 2014
  */
 public class NavigationItem {
 	private String mText;

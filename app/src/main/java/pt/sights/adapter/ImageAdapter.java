@@ -10,7 +10,10 @@ import android.widget.ImageView;
 import java.util.List;
 
 /**
- * Created by valternepomuceno on 07/12/14.
+ *
+ * @author 	Valter Nepomuceno
+ * @version	1.0
+ * @since	7th of December of 2014
  */
 class ImageAdapter extends PagerAdapter {
 
