@@ -11,7 +11,7 @@ import pt.sights.data.Sight;
 import pt.sights.listeners.UrlImageListener;
 
 /**
- *
+ * Asynchronous task to download an image from an URL.
  * @author 	Valter Nepomuceno
  * @version	1.0
  * @since	7th of December of 2014

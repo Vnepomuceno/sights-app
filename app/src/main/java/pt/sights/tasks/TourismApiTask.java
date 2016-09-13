@@ -24,7 +24,7 @@ import pt.sights.data.Sight;
 import pt.sights.listeners.TourismResultsListener;
 
 /**
- *
+ * Asynchronous task to query CitySDK API.
  * @author 	Valter Nepomuceno
  * @version	1.0
  * @since	28th of November of 2014

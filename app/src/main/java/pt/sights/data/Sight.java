@@ -12,10 +12,7 @@ import citysdk.tourism.client.poi.base.POITermType;
 import citysdk.tourism.client.poi.single.PointOfInterest;
 
 /**
- * Created by valternepomuceno on 03/12/2014.
- */
-/**
- *
+ * Sights data model class.
  * @author 	Valter Nepomuceno
  * @version	1.0
  * @since	3rd of December of 2014
@@ -45,8 +42,8 @@ public class Sight implements Comparable<Sight> {
 	private boolean favourited = false, rated = false;
 
 	/**
-	 *
-	 * @param poi
+	 * Constructor for Sight class.
+	 * @param poi CitySDK Point Of Interest data model.
 	 */
 	public Sight(PointOfInterest poi) {
 		this.poi = poi;
@@ -63,8 +60,7 @@ public class Sight implements Comparable<Sight> {
 	}
 
 	/**
-	 * Scraps address, phone, email, website and facebook
-	 * from the reponse of CitySDK
+	 * Scraps and stores Address, Phone, Email, Website and Facebook from CitySDK response.
 	 */
 	private void scrapSightData() {
 		for (int i = 0; i < poi.getLink().size(); i++) {
@@ -106,8 +102,8 @@ public class Sight implements Comparable<Sight> {
 	}
 
 	/**
-	 * Calculates the number of image links in the PointOfInterest
-	 * @return Number of images
+	 * Calculates the number of image links in the Point Of Interest.
+	 * @return Number of images.
 	 */
 	public int getNumberOfImages() {
 		int n = 0;
@@ -119,214 +115,48 @@ public class Sight implements Comparable<Sight> {
 		return n;
 	}
 
-	/**
-	 *
-	 * @return
-	 */
 	public String[] getCoordinates() {
 		if (poi.getLocation().getPoint() != null && poi.getLocation().getPoint().size() > 0)
 			return poi.getLocation().getPoint().get(0).getPoint().getPosList().split(" ");
 		else
 			return null;
 	}
-
-	/**
-	 *
-	 * @return
-	 */
 	public Bitmap getCoverImage() {
 		if (images != null && images.size() > 0)
 			return images.get(0);
 		else
 			return null;
 	}
-
-	/**
-	 *
-	 * @return
-	 */
 	public int id() { return id; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public String getEmail() { return email == null ? "" : email; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public String getWebsite() { return website == null ? "" : website; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public String getFacebook() { return facebook == null ? "" : facebook; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public String getPhone() { return phone == null ? "" : phone; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public String getAddress() { return address == null ? "" : address; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public ParseObject getFavourite() { return favouriteParseObj; }
-
-	/**
-	 *
-	 * @param parseObject
-	 */
 	public void setFavourite(ParseObject parseObject) { favouriteParseObj = parseObject; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public ParseObject getCheckin() { return checkinParseObj; }
-
-	/**
-	 *
-	 * @param parseObject
-	 */
 	public void setCheckin(ParseObject parseObject) { checkinParseObj = parseObject; }
-
-	/**
-	 *
-	 * @param bitmap
-	 */
 	public void addImage(Bitmap bitmap) { images.add(bitmap); }
-
-	/**
-	 *
-	 * @return
-	 */
 	public PointOfInterest getPoi() { return this.poi; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public List<Bitmap> getImages() { return this.images; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public Bitmap getStaticMapBitmap() { return this.staticMap; }
-
-	/**
-	 *
-	 * @param staticMap
-	 */
 	public void setStaticMapBitmap(Bitmap staticMap) { this.staticMap = staticMap; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public float getRating() { return this.rating; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public ParseObject getRatingParseObj() { return this.ratingParseObj; }
-
-	/**
-	 *
-	 * @param rating
-	 */
 	public void setRating(float rating) { this.rating = rating; }
-
-	/**
-	 *
-	 * @param parseObject
-	 */
 	public void setRating(ParseObject parseObject) { this.ratingParseObj = parseObject; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public int getNumReviews() { return this.numReviews; }
-
-	/**
-	 *
-	 * @param numReviews
-	 */
 	public void setNumReviews(int numReviews) { this.numReviews = numReviews; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public int getNumFavourites() { return this.numFavourites; }
-
-	/**
-	 *
-	 * @param n
-	 */
 	public void setNumFavourites(int n) { this.numFavourites = n; }
-
-	/**
-	 *
-	 */
 	public void swapFavourited() { this.favourited = !this.favourited; }
-
-	/**
-	 *
-	 */
 	public void updateFavourited() { this.favourited = this.favouriteParseObj != null; }
-
-	/**
-	 *
-	 */
 	public void updateRated() { this.rated = this.ratingParseObj != null; }
-
-	/**
-	 *
-	 * @param bool
-	 */
 	public void updateRated(boolean bool) { this.rated = bool; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public boolean isFavourited() { return this.favourited; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public boolean isRated() { return this.rated; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public boolean hasCheckedIn() { return this.checkinParseObj != null; }
-
-	/**
-	 *
-	 * @param distance
-	 */
 	public void setDistance(String distance) { this.distance = distance; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public String getDistance() { return this.distance; }
 }

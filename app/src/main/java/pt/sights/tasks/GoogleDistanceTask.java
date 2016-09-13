@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- *
+ * Asynchronous task to query from Google Distance API.
  * @author 	Valter Nepomuceno
  * @version	1.0
  * @since	18th of March of 2015

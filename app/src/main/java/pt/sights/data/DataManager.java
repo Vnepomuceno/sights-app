@@ -67,22 +67,16 @@ import static pt.sights.data.DataManager.LiquidEventType.GO_TO_INSTAGRAM;
 import static pt.sights.data.DataManager.LiquidEventType.GO_TO_LINKEDIN;
 
 /**
- *
+ * Data manager class which stores and manages all application data.
  * @author 	Valter Nepomuceno
  * @version	1.0
  * @since	2nd of December of 2014
  */
 public class DataManager extends Application {
 
-	/**
-	 *
-	 */
 	public enum LiquidActivityType { LOGIN, LOGOUT, REGISTER, RESET, SIGHT_DETAIL, CHECK_IN_DIALOG,
 		RATE_DIALOG, EXPLORE, MAP, PROFILE, FEEDBACK, ABOUT }
 
-	/**
-	 *
-	 */
 	public enum LiquidEventType { ENTER, SIGN_IN, SIGN_OUT, SIGN_UP, RESET_PWD, RATE_SIGHT,
 		CLOSE_RATE_DIALOG, CHECK_IN, FAVOURITE, UNFAVOURITE, SHOW_MORE_DESCRIPTION, SHOW_LESS_DESCRIPTION,
 		SHOW_GALLERY, GO_TO_MAP, SEND_FEEDBACK, NO_INTERNET, GO_TO_FACEBOOK, GO_TO_INSTAGRAM,
@@ -92,7 +86,6 @@ public class DataManager extends Application {
 	private List<Sight> sights;
 	private List<SightCard> userFavouriteSights, userRatedSights;
 	private SightCardAdapter sightCardAdapter;
-	private SightProfileAdapter sightProfileRatedAdapter;
 	private int sightDetailPos;
 	private Context context;
 	public String userId;
@@ -730,7 +723,7 @@ public class DataManager extends Application {
 			Collections.sort(list, new Comparator<SightProfile>() {
 				@Override
 				public int compare(SightProfile lhs, SightProfile rhs) {
-					Integer lhsInt = new Integer(lhs.nDaysAgo), rhsInt = new Integer(rhs.nDaysAgo);
+					Integer lhsInt = lhs.nDaysAgo, rhsInt = rhs.nDaysAgo;
 					return lhsInt.compareTo(rhsInt);
 				}
 			});
@@ -763,7 +756,7 @@ public class DataManager extends Application {
 			Collections.sort(list, new Comparator<SightProfile>() {
 				@Override
 				public int compare(SightProfile lhs, SightProfile rhs) {
-					Integer lhsInt = new Integer(lhs.nDaysAgo), rhsInt = new Integer(rhs.nDaysAgo);
+					Integer lhsInt = lhs.nDaysAgo, rhsInt = rhs.nDaysAgo;
 					return lhsInt.compareTo(rhsInt);
 				}
 			});
@@ -822,70 +815,15 @@ public class DataManager extends Application {
 		return screenWidth;
 	}
 
-	/**
-	 *
-	 * @param pos
-	 */
 	public void setSightDetailPos(int pos) { sightDetailPos = pos; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public SightCardAdapter getSightCardAdapter() { return sightCardAdapter; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public List<Sight> getSightLocations() { return this.sights; }
-
-	/**
-	 *
-	 * @param locations
-	 */
 	public void setSightLocations(List<Sight> locations) { this.sights = locations; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public Sight getSightUnderInspection() { return this.sights.get(sightDetailPos); }
-
-	/**
-	 *
-	 * @return
-	 */
 	public List<SightCard> getFavouriteSights() { return this.userFavouriteSights; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public List<SightCard> getRatedSights() { return this.userRatedSights; }
-
-	/**
-	 *
-	 * @param sightProfileFavouritesAdapter
-	 */
-	public void setSightProfileFavouritesAdapter(SightProfileAdapter sightProfileFavouritesAdapter) {
-		SightProfileAdapter sightProfileFavouritesAdapter1 = sightProfileFavouritesAdapter;
-	}
-
-	/**
-	 *
-	 * @param sightCardAdapter
-	 */
 	public void setSightCardAdapter(SightCardAdapter sightCardAdapter) {
 		this.sightCardAdapter = sightCardAdapter;
-	}
-
-	/**
-	 *
-	 * @param sightProfileRatedAdapter
-	 */
-	public void setSightProfileRatedAdapter(SightProfileAdapter sightProfileRatedAdapter) {
-		this.sightProfileRatedAdapter = sightProfileRatedAdapter;
 	}
 
 }

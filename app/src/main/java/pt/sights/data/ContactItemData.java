@@ -1,7 +1,7 @@
 package pt.sights.data;
 
 /**
- *
+ * Contact Item data model class.
  * @author 	Valter Nepomuceno
  * @version	1.0
  * @since	25th of March of 2015
@@ -15,31 +15,17 @@ public class ContactItemData {
 	private int imageUrl;
 
 	/**
-	 *
-	 * @param type
-	 * @param title
+	 * Constructor for Contact Item data model.
+	 * @param type Contact type.
+	 * @param title Contact value.
 	 */
 	public ContactItemData(Type type, String title) {
 		this.type = type;
 		this.title = title;
 	}
 
-	/**
-	 *
-	 * @return
-	 */
 	public String getTitle() { return this.title; }
-
-	/**
-	 *
-	 * @return
-	 */
 	public int getImageUrl() { return this.imageUrl; }
-
-	/**
-	 *
-	 * @param imageUrl
-	 */
 	public void setImageUrl(int imageUrl) { this.imageUrl = imageUrl; }
 
 }

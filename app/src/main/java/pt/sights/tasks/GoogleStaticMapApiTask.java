@@ -14,7 +14,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.io.InputStream;
 
 /**
- *
+ * Asynchronous task to query Google Static Maps API.
  * @author 	Valter Nepomuceno
  * @version	1.0
  * @since	29th of November of 2014

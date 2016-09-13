@@ -103,7 +103,6 @@ public class ProfileFragment extends Fragment {
 				getActivity().getApplicationContext(),
 				favouritesRv,
 				1);
-		dataManager.setSightProfileFavouritesAdapter(sightProfileAdapter);
 		favouritesRv.setAdapter(sightProfileAdapter);
 
 		if (dataManager.getFavouriteSights() != null && favouritesRv != null && sightProfileAdapter != null) {
@@ -123,7 +122,6 @@ public class ProfileFragment extends Fragment {
 				getActivity().getApplicationContext(),
 				ratedRv,
 				2);
-		dataManager.setSightProfileRatedAdapter(sightProfileAdapter);
 		ratedRv.setAdapter(sightProfileAdapter);
 
 		if (dataManager.getRatedSights() != null && ratedRv != null && sightProfileAdapter != null) {
