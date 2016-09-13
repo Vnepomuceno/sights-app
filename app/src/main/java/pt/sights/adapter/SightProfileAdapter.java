@@ -33,6 +33,13 @@ public class SightProfileAdapter extends RecyclerView.Adapter<SightProfileAdapte
 	private final RecyclerView recyclerView;
 	private int cardType;
 
+	/**
+	 *
+	 * @param sights
+	 * @param context
+	 * @param recyclerView
+	 * @param cardType
+	 */
 	public SightProfileAdapter(List<SightProfile> sights, Context context, RecyclerView recyclerView,
 	                           int cardType) {
 		this.dataManager = (DataManager) context.getApplicationContext();
@@ -86,6 +93,9 @@ public class SightProfileAdapter extends RecyclerView.Adapter<SightProfileAdapte
 		context.startActivity(intent);
 	}
 
+	/**
+	 *
+	 */
 	public class SightViewHolder extends RecyclerView.ViewHolder {
 
 		public int id;

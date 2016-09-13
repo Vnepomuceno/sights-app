@@ -26,6 +26,11 @@ public class FullScreenImageAdapter extends PagerAdapter {
 	public Context context;
 	public List<Bitmap> images;
 
+	/**
+	 *
+	 * @param context
+	 * @param images
+	 */
 	public FullScreenImageAdapter(Context context, List<Bitmap> images) {
 		this.context = context;
 		this.images = images;

@@ -26,6 +26,12 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
 	private final ContactItemData[] itemsData;
 	private final RecyclerView recyclerView;
 
+	/**
+	 *
+	 * @param context
+	 * @param itemsData
+	 * @param recyclerView
+	 */
 	public ContactAdapter(Context context, ContactItemData[] itemsData, RecyclerView recyclerView) {
 		this.context = context;
 		this.itemsData = itemsData;
@@ -84,6 +90,9 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
 		}
 	}
 
+	/**
+	 *
+	 */
 	public static class ViewHolder extends RecyclerView.ViewHolder {
 
 		public final TextView titleTv;

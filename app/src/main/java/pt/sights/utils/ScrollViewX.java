@@ -4,12 +4,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ScrollView;
 
-/**
- *
- * @author 	Valter Nepomuceno
- * @version	1.0
- * @since	1st of March of 2015
- */
 public class ScrollViewX extends ScrollView {
 	private OnScrollViewListener mOnScrollViewListener;
 

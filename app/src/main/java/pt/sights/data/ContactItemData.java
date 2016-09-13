@@ -14,13 +14,32 @@ public class ContactItemData {
 	private final String title;
 	private int imageUrl;
 
+	/**
+	 *
+	 * @param type
+	 * @param title
+	 */
 	public ContactItemData(Type type, String title) {
 		this.type = type;
 		this.title = title;
 	}
 
+	/**
+	 *
+	 * @return
+	 */
 	public String getTitle() { return this.title; }
+
+	/**
+	 *
+	 * @return
+	 */
 	public int getImageUrl() { return this.imageUrl; }
+
+	/**
+	 *
+	 * @param imageUrl
+	 */
 	public void setImageUrl(int imageUrl) { this.imageUrl = imageUrl; }
 
 }

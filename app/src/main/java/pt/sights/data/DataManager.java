@@ -74,9 +74,15 @@ import static pt.sights.data.DataManager.LiquidEventType.GO_TO_LINKEDIN;
  */
 public class DataManager extends Application {
 
+	/**
+	 *
+	 */
 	public enum LiquidActivityType { LOGIN, LOGOUT, REGISTER, RESET, SIGHT_DETAIL, CHECK_IN_DIALOG,
 		RATE_DIALOG, EXPLORE, MAP, PROFILE, FEEDBACK, ABOUT }
 
+	/**
+	 *
+	 */
 	public enum LiquidEventType { ENTER, SIGN_IN, SIGN_OUT, SIGN_UP, RESET_PWD, RATE_SIGHT,
 		CLOSE_RATE_DIALOG, CHECK_IN, FAVOURITE, UNFAVOURITE, SHOW_MORE_DESCRIPTION, SHOW_LESS_DESCRIPTION,
 		SHOW_GALLERY, GO_TO_MAP, SEND_FEEDBACK, NO_INTERNET, GO_TO_FACEBOOK, GO_TO_INSTAGRAM,
@@ -817,22 +823,67 @@ public class DataManager extends Application {
 	}
 
 	/**
-	 * GETTERS and SETTERS for DataManager class
+	 *
+	 * @param pos
 	 */
 	public void setSightDetailPos(int pos) { sightDetailPos = pos; }
+
+	/**
+	 *
+	 * @return
+	 */
 	public SightCardAdapter getSightCardAdapter() { return sightCardAdapter; }
+
+	/**
+	 *
+	 * @return
+	 */
 	public List<Sight> getSightLocations() { return this.sights; }
+
+	/**
+	 *
+	 * @param locations
+	 */
 	public void setSightLocations(List<Sight> locations) { this.sights = locations; }
+
+	/**
+	 *
+	 * @return
+	 */
 	public Sight getSightUnderInspection() { return this.sights.get(sightDetailPos); }
+
+	/**
+	 *
+	 * @return
+	 */
 	public List<SightCard> getFavouriteSights() { return this.userFavouriteSights; }
+
+	/**
+	 *
+	 * @return
+	 */
 	public List<SightCard> getRatedSights() { return this.userRatedSights; }
 
+	/**
+	 *
+	 * @param sightProfileFavouritesAdapter
+	 */
 	public void setSightProfileFavouritesAdapter(SightProfileAdapter sightProfileFavouritesAdapter) {
 		SightProfileAdapter sightProfileFavouritesAdapter1 = sightProfileFavouritesAdapter;
 	}
+
+	/**
+	 *
+	 * @param sightCardAdapter
+	 */
 	public void setSightCardAdapter(SightCardAdapter sightCardAdapter) {
 		this.sightCardAdapter = sightCardAdapter;
 	}
+
+	/**
+	 *
+	 * @param sightProfileRatedAdapter
+	 */
 	public void setSightProfileRatedAdapter(SightProfileAdapter sightProfileRatedAdapter) {
 		this.sightProfileRatedAdapter = sightProfileRatedAdapter;
 	}

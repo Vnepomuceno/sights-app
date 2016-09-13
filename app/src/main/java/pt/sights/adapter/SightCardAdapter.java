@@ -33,6 +33,13 @@ public class SightCardAdapter extends RecyclerView.Adapter<SightCardAdapter.Sigh
 
 	private final int displayHeight;
 
+	/**
+	 *
+	 * @param sights
+	 * @param context
+	 * @param recyclerView
+	 * @param displayHeight
+	 */
 	public SightCardAdapter(List<SightCard> sights, Context context, RecyclerView recyclerView, int displayHeight) {
 		this.sights = sights;
 		this.context = context;
@@ -74,6 +81,9 @@ public class SightCardAdapter extends RecyclerView.Adapter<SightCardAdapter.Sigh
 		context.startActivity(intent);
 	}
 
+	/**
+	 *
+	 */
 	public static class SightViewHolder extends RecyclerView.ViewHolder {
 
 		public final TextView name;
